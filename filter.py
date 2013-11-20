@@ -14,11 +14,11 @@
 # Configuration Array
 # Note for the paths: use trailing slash (/)!
 _conf = {
-    'minDim': (1680, 1050), # (width, height)
+    'minDim': (1920, 1200), # (width, height)
     'useExactDim': False,   # True: exact dimensions, False: minDim is lower limit
     'useAR': False,         # use the aspect ratio from the minimum dimensions
     'imagePath': '/Users/andre/Dropbox/IFTTT/reddit/EarthPorn/',
-    'moveImproper': True,   # True moves, False deletes immediately
+    'moveImproper': False,  # True moves, False deletes immediately
     'improperPath': '/Users/andre/Dropbox/IFTTT/reddit/EarthPorn/improper/',
 }
 

@@ -24,7 +24,6 @@ _conf = {
 
 # import stuff
 import os               # file handling
-import re               # regular expression
 from PIL import Image   # handling images
 
 
@@ -45,7 +44,7 @@ def main():
         filepath = _conf['imagePath'] + filename
         if os.path.isdir(filepath):
             continue
-        if re.match("\.jpg$", filename) is not None:
+        if not filename.endswith('.jpg'):
             continue
 
         image = Image.open(filepath)

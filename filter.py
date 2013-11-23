@@ -45,6 +45,7 @@ def main():
         if os.path.isdir(filepath):
             continue
         if not filename.endswith('.jpg'):
+            handleImproper(filename)
             continue
 
         image = Image.open(filepath)
